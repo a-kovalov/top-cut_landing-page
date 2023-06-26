@@ -66,7 +66,7 @@
 .page__menu {
   opacity: 0;
   pointer-events: none;
-  transition: all .3s;
+  transition: all .5s;
   position: fixed;
   top: 0;
   left: 0;
@@ -153,7 +153,7 @@
   background-size: cover;
   width: 18px;
   height: 18px;
-  transition: transform .3s;
+  transition: transform .5s;
   display: block;
 }
 
@@ -217,7 +217,7 @@
 .top-bar {
   justify-content: space-between;
   align-items: center;
-  padding-block: 35px;
+  padding-block: 5px;
   display: flex;
   position: relative;
 }
@@ -245,7 +245,7 @@
 
 .top-bar__logo {
   height: 100px;
-  transition: transform .3s;
+  transition: transform .5s;
 }
 
 .top-bar__logo:hover {
@@ -355,14 +355,15 @@
 .nav__link {
   color: #16191b;
   letter-spacing: 2px;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 18px;
   text-decoration: none;
   position: relative;
 }
 
 @media (width >= 576px) {
   .nav__link {
+    font-size: 22px;
     font-weight: 900;
   }
 }
@@ -373,7 +374,7 @@
   background-color: #16191b;
   width: 100%;
   height: 1px;
-  transition: transform .3s;
+  transition: transform .5s;
   display: block;
   position: absolute;
   bottom: -8px;
@@ -462,6 +463,7 @@
 .about-us__title {
   color: #c6995a;
   grid-column: 1 / -1;
+  margin: 0;
 }
 
 @media (width >= 576px) {
@@ -498,7 +500,7 @@
 }
 
 .about-us__description {
-  margin: 0 0 48px;
+  margin: 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 140%;
@@ -542,7 +544,7 @@
   border-top-left-radius: 8%;
   grid-column: 1 / -1;
   padding: 32px 16px 16px;
-  transition: transform .3s;
+  transition: transform .5s;
   box-shadow: 12px 10px 10px #3b3529;
 }
 
@@ -629,7 +631,7 @@
 .stuffs__photo {
   width: 100%;
   margin-bottom: 32px;
-  transition: transform .3s;
+  transition: transform .5s;
 }
 
 .stuffs__photo:hover {
@@ -654,6 +656,12 @@
 @media (width >= 576px) {
   .stuffs__description {
     font-size: 22px;
+  }
+}
+
+@media (width >= 1024px) {
+  .stuffs__description {
+    margin: 0;
   }
 }
 
@@ -757,7 +765,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  transition: transform .3s;
+  transition: transform .5s;
   position: absolute;
 }
 
@@ -791,7 +799,7 @@
   border-radius: 10%;
   width: 100%;
   height: 411px;
-  transition: transform .3s;
+  transition: transform .5s;
 }
 
 .gallery__video:hover {
@@ -847,7 +855,7 @@
   font-weight: 700;
   line-height: 27px;
   text-decoration: none;
-  transition: all .3s;
+  transition: all .5s;
 }
 
 .category__button:hover {
@@ -881,7 +889,7 @@
 .price-list__table--title {
   text-align: left;
   text-transform: uppercase;
-  padding: 8px;
+  padding: 1px;
 }
 
 .price-list__table--services {
@@ -953,6 +961,7 @@
 
 .price-list__table--link {
   box-sizing: border-box;
+  color: #16191b;
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 7px;
@@ -960,7 +969,7 @@
   height: 100%;
   padding: 6px 8px;
   text-decoration: none;
-  transition: all .3s;
+  transition: all .5s;
 }
 
 .price-list__table--link:hover {
@@ -968,7 +977,7 @@
 }
 
 .price-list__table--link:visited {
-  color: #000;
+  color: #16191b;
   text-decoration: none;
 }
 
@@ -1007,7 +1016,7 @@
 .slideshow__reviews-group {
   text-align: center;
   flex-direction: column;
-  transition: transform .3s;
+  transition: transform .5s;
   display: flex;
 }
 
@@ -1188,7 +1197,7 @@
 .contacts__link {
   color: #ebebeb;
   text-decoration: none;
-  transition: color .3s;
+  transition: color .5s;
 }
 
 .contacts__link:hover {
@@ -1218,11 +1227,11 @@
   color: #fff;
   letter-spacing: 2px;
   margin-bottom: 20px;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: bold;
   line-height: 15px;
   text-decoration: none;
-  transition: color .3s;
+  transition: color .5s;
 }
 
 .contacts__nav-item:hover {
