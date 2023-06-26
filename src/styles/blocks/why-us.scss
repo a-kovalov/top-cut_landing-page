@@ -1,0 +1,54 @@
+.why-us {
+  &__content {
+    @include pageGrid;
+    row-gap: 40px;
+
+    @include onTablet {
+      row-gap: 48px;
+      column-gap: 30px;
+    }
+  }
+
+  &__card {
+    background: #161616;
+    box-shadow: 12px 10px 10px #3b3529;
+    border-top-left-radius: 8%;
+    border: 1px solid #3f3c36;
+    padding: 32px 16px 16px;
+    transition: transform $effectDuration;
+
+    &:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+    }
+
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 2 / -2;
+    }
+
+    @include onDesktop {
+      grid-column: span 4;
+    }
+
+    &-photo {
+      height: 66px;
+      width: 66px;
+    }
+
+    &-title {
+      width: fit-content;
+      padding-bottom: 7px;
+      border-bottom: 1px solid $secondary-text-color;
+    }
+
+    &-description {
+      margin: 0;
+      line-height: $main-line-height;
+      font-weight: 400;
+      font-size: 18px;
+      color: #8c8c8c;
+    }
+  }
+}

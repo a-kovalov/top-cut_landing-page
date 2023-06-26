@@ -1,0 +1,41 @@
+// Style all font awesome icons
+.fa {
+  padding: 16px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: 
+    outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+  margin-bottom: 50px;
+
+  &:hover {
+    outline-offset: 4px;
+    animation: shake 0.50s;
+  }
+
+  // Set a specific color for each brand
+
+  &-instagram {
+    background: #c6995a;
+    color: white;
+  }
+
+  &-facebook {
+    background: #c6995a;
+    color: white;
+  }
+
+  &-envelope {
+    background: #c6995a;
+    color: white;
+  }
+
+  &-phone {
+    background: #c6995a;
+    color: white;
+  }
+}

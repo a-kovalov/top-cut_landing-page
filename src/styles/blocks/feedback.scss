@@ -1,0 +1,89 @@
+.slideshow {
+  @include pageGrid;
+
+  &__fade {
+    &--square {
+      grid-column: 1 / -1;
+      margin-bottom: 20px;
+
+      @include onDesktop {
+        grid-column: 4 / 10;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__reviews-group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform $effectDuration;
+
+    &:hover {
+      transform: scale(1.10);
+      cursor: pointer;
+    }
+    
+  }
+}
+
+.reviews-group {
+  &__service {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 22px;
+  }
+
+  &__worker {
+    font-size: 15px;
+  }
+
+  &__feedback {
+    font-size: 25px;
+    font-style: italic;
+    line-height: 140%;
+  }
+
+  &__person {
+    font-size: 15px;
+  }
+}
+
+.mySlides {
+  display: none;
+}
+
+.dots {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  grid-column: 1 / -1;
+}
+
+.dot {
+  display: block;
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+  margin-bottom: 40px;
+
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  @include onTablet {
+    height: 12px;
+    width: 12px;
+  }
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}

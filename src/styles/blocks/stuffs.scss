@@ -1,0 +1,56 @@
+.stuffs {
+  @include pageGrid;
+  row-gap: 40px;
+
+  @include onTablet {
+    row-gap: 48px;
+    margin-bottom: 48px;
+  }
+
+  &__stuff {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 2 / -2;
+    }
+
+    @include onDesktop {
+      grid-column: span 4;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    margin-bottom: 32px;
+    transition: transform $effectDuration;
+
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }  
+
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #c6995a;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: $main-line-height;
+
+    @include onTablet {
+      font-size: 22px;
+    }
+
+    @include onDesktop {
+      margin: 0;
+    }
+  }
+}

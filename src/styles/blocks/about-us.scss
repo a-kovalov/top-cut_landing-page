@@ -1,0 +1,52 @@
+.about-us {
+  &__information {
+    @include pageGrid;
+    row-gap: 20px;
+
+    @include onTablet {
+      row-gap: 40px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    grid-column: 1 / -1;
+    color: #c6995a;
+
+    @include onTablet {
+      font-size: 44px;
+      grid-column: 1 / 4;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    @include onDesktop {
+      font-size: 64px;
+      grid-column: span 6;
+    }
+  }
+
+  &__content {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 4 / 7;
+    }
+
+    @include onDesktop {
+      grid-column: span 6;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    line-height: $main-line-height;
+    font-weight: 400;
+    font-size: 18px;
+
+    @include onTablet {
+      font-size: 23px;
+    }
+  }
+}
