@@ -26,24 +26,16 @@
   }
 
   &__nav {
-    margin-bottom: 15px;
-
-    @include onTablet {
-      margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
   }
 
   &__phone-number {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 27px;
     color: $secondary-text-color;
     text-decoration: none;
-
-    @include onTablet {
-      margin-bottom: 16px;
-    }
 
     @include onDesktop {
       font-weight: 700;
