@@ -1,0 +1,93 @@
+.news {
+  @include pageGrid;
+  row-gap: 40px;
+
+  @include onTablet {
+    row-gap: 48px;
+    column-gap: 30px;
+  }
+
+  &__card {
+    background: #161616;
+    box-shadow: 12px 10px 10px #3b3529;
+    border-radius: 5%;
+    border: 1px solid #3f3c36;
+    padding: 32px 16px 16px;
+
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 2 / -2;
+    }
+
+    @include onDesktop {
+      grid-column: span 4;
+    }
+
+    &-photo {
+      border-radius: 5%;
+      width: 100%;
+      transition: transform $effectDuration;
+
+      &:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+      }
+    }
+
+    &-description {
+      width: fit-content;
+      padding-bottom: 7px;
+      border-bottom: 1px solid $secondary-text-color;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    &-button {
+      position: relative;
+  
+      display: flex;
+      flex-direction: row;
+      width: fit-content;
+      padding: 4px 0;
+      align-items: center;
+      gap: 4px;
+  
+      color: $main-text-color;
+  
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 100%;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      @include bottomLine($main-text-color, 1);
+
+      &:active .news__card-link {
+        color: $main-text-color;
+      }
+    }
+
+    &-icon {
+      display: block;
+      height: 18px;
+      width: 18px;
+      background-size: cover;
+
+      background-image: url(../images/icons/icon-arrow.png);
+    
+      @include onTablet {
+        height: 24px;
+        width: 24px;
+      }
+    }
+
+    &-hashtags {
+      margin: 0;
+      line-height: $main-line-height;
+      font-weight: 400;
+      font-size: 18px;
+      color: #8c8c8c;
+    }
+  }
+}

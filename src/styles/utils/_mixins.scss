@@ -32,3 +32,23 @@
     --columns: 12;
   }
 }
+
+@mixin bottomLine($color, $scale) {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: $color;
+
+    transition: transform $effectDuration;
+    transform: scale(0);
+    transform-origin: center;
+  }
+
+  &:hover::after {
+    transform: scale($scale);
+  }
+}

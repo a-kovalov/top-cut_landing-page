@@ -4,9 +4,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Top Cut Barbershop - najlepszy #barbershop na Ursynowie w Warszawie, specjalizujący się w profesjonalnym strzyżeniu męskim. Odwiedź nas, jeśli szukasz wysokiej jakości usług #strzyżenie na Ursynowie, Warszawa. Zapraszamy do zapoznania się z naszą ofertą i umówienia się na wizytę!">
-
+    <meta name="keywords" content="barbershop, barbershopursynów, strzyżenie męskie, Ursynów, Warszawa">
+    <meta description="Barbershop w: Warszawa">
     <title>TopCut BARBERSHOP</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://a-kovalov.github.io/top-cut_landing-page/">
+    <link rel="canonical" href="https://a-kovalov.github.io/top-cut_landing-page/">
+    <meta property="og:title" content="TopCut BARBERSHOP">
+    <meta name="og:description" content="Top Cut Barbershop - najlepszy #barbershop na Ursynowie w Warszawie, specjalizujący się w profesjonalnym strzyżeniu męskim. Odwiedź nas, jeśli szukasz wysokiej jakości usług #strzyżenie na Ursynowie, Warszawa. Zapraszamy do zapoznania się z naszą ofertą i umówienia się na wizytę!">
+    <meta property="og:image" content="https://d375139ucebi94.cloudfront.net/region2/pl/163109/biz_photo/1055e2b84d3d445aa6aeb0471011fe-top-cut-barbershop-biz-photo-fb59a4baf4d843c2a4bfa517284710-booksy.jpeg?size=640x427">
+    <meta property="og:image:width" content="640">
+    <meta property="og:image:height" content="427">
     <link
       rel="icon"
       type="image/x-icon"
@@ -18,7 +26,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
-
   </head>
 <!-- #endregion -->
   <body class="page__body">
@@ -126,6 +133,100 @@
                   Top Cut Barbershop jest miejscem z zespołem ekspertów w dziedzinie męskich fryzur ta stylów. Jeżeli szukasz miejsca gdzie możesz zaufać barberowi, koniecznie musisz tu wpaść!
                 </p>
               </div>
+            </div>
+
+            <h3 
+              class="about-us__news-title"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
+              Aktualności
+            </h3>
+
+            <div 
+              class="news"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+            >
+              <article class="news__card">
+                <a 
+                  href="https://www.instagram.com/p/Cvzef5JIhEE/"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/news/ola-post.png"
+                    alt="Doskonała kadra"
+                    class="news__card-photo"
+                  >
+                </a>
+
+                <p class="news__card-description">
+                  Jak namówiliśmy Olę do nagrania rolki? Nie wiemy, dalej jesteśmy w szoku 🤪
+                </p>
+
+                <a href="#price-list" class="news__card-button">
+                  <div class="news__card-icon"></div>
+                  <div class="news__card-link">Umów się</div>
+                </a>
+
+                <p class="news__card-hastags">
+                  #barbershop #barbershopursynów #barberlife #barberlifestyle #barberstylist
+                </p>
+              </article>
+
+              <article class="news__card">
+                <a 
+                  href="https://www.instagram.com/p/Cuy6yp9o8oi/"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/news/unboxing-post.png"
+                    alt="Lokalizacja metro Służew"
+                    class="news__card-photo"
+                  >
+                </a>
+
+                <p class="news__card-description">
+                  Artur robi unboxing, bo ma brode, a to paka od @pandrwalnatural i @delma_bcmf 🖐🏼
+                </p>
+
+                <a href="#price-list" class="news__card-button">
+                  <div class="news__card-icon"></div>
+                  <div class="news__card-link">Umów się</div>
+                </a>
+
+                <p class="news__card-hastags">
+                  #freshcut #barber #barberhustle #barberpromote #menhairstyle #hairstylemen
+                </p>
+              </article>
+
+              <article class="news__card">
+                <a 
+                  href="https://www.instagram.com/p/CtZZ2MVIT8t/"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/news/o-nas-post.png"
+                    alt="Napoje"
+                    class="news__card-photo"
+                  >
+                </a>
+
+                <p class="news__card-description">
+                  Zapraszamy was drodzy widzowie!
+                </p>
+
+                <a href="#price-list" class="news__card-button">
+                  <div class="news__card-icon"></div>
+                  <div class="news__card-link">Umów się</div>
+                </a>
+
+                <p class="news__card-hastags">
+                  #warszawa #strzyzeniemeskie #ursynowbarber #topcut #topcutbarbershop
+                </p>
+              </article>
             </div>
           </section>
 
@@ -990,18 +1091,11 @@
             <h2 class="section-title">Kontakt</h2>
 
             <div class="contacts__information">
-              <div class="contacts__map" id="map"></div>
-
-              <script async defer src="map.js"></script>
-
-              <script>
-                (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
-                  key: "AIzaSyDLJQatYzPkwIaJ8CaYwilobPOV8SNz_AA",
-                  v: "weekly",
-                  // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
-                  // Add other bootstrap parameters as needed, using camel case.
-                });
-              </script>
+              <img 
+                src="images/contacts/map.png"
+                class="contacts__map"
+              >
+              </img>
 
               <div class="contacts__content">
                 <div class="contacts__data">
@@ -1016,6 +1110,17 @@
                       Dzwonnicza 3 02-784, Warszawa
                     </a>
                   </h5>
+
+                  <div class="contacts__information contacts__information--button-position">
+                    <a
+                      class="contacts__button"
+                      href="https://www.google.com/maps/dir//Top+Cut+Barbershop,+Dzwonnicza+3,+02-784+Warszawa/@52.1571617,20.9897278,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4719338e25bb717f:0x9416ef8995359537!2m2!1d21.0309271!2d52.1571162?entry=ttu"
+                      target="_blank"
+                    >
+                    Wyznacz trasę
+                    </a>
+                  </div>
+
                 </div>
 
                 <div class="contacts__data">
