@@ -1275,6 +1275,12 @@
   grid-column: 1 / -1;
   width: 100%;
   margin-bottom: 20px;
+  transition: transform .5s;
+}
+
+.contacts__map:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 @media (width >= 576px) {
